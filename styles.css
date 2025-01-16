@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #F8F9FD;
+}
+
+#container{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 1.5em;
+}
+
+.toggle-language{
+    display: flex;
+}
+
+#toggle{
+    width: 7em;
+    height: 2.2em;
+    position: relative;
+    display: block;
+    background-color: #e8ddbd;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: 0.5s;
+}
+
+#toggle::after {
+    content: "";
+    width: 3.5em;
+    height: 1.9em;
+    position: absolute;
+    left: 2%;
+    margin-top: 2%;
+    background-color: #dba887;
+    border-radius: 20px;
+}
+
+input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + #toggle{
+    background-color: #e8ddbd;
+}
+
+input:checked + #toggle::after{
+    margin-left: 95%;
+    transform: translateX(-100%);
+    background-color: #dba887;
+}
+
+#toggle span{
+    position: absolute;
+    top: 25%;
+    width: 120px;
+    z-index: 100;
+}
+
+#toggle span.pt{
+    left: 17%;
+    transition: 0.5s;
+}
+
+#toggle span.en{
+    left: 63%;
+    transition: 0.5s;
+}
+
+#icon{
+    cursor: pointer;
+}
+
+#content{
+    max-width: 100%;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#image__Content{
+    height: 10em;
+    padding-bottom: 1em;
+}
+
+#text__Content{
+    font-size: 4em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+#button__Content{
+    font-size: 1.5em;
+    background-color: #dba887;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    border-radius: 50px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.habilidade {
+    height: 55%;
+    background: #F8F9FD;
+    padding-bottom: 5em;
+
+}
+
+#titulo_habilidade{
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 0 0.5em;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #dfb498;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(80, 80, 80, 0.37);
+
+    width: 18em;
+    height: 18em;
+    margin: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img__Card{
+    height: 70%;
+}
+
+.sobre__Content{
+    display: flex;
+    flex-direction: row;
+
+    padding: 5em;
+    background-color: #e8ddbd;
+}
+
+#img__Sobre{
+    width: 40%;
+    height: 90%;
+}
+
+#image__Sobre{
+    width: 90%;
+    height: 90%;
+}
+
+#sobre__Info{
+    width: 60%;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 2em;
+}
+
+.titulo{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+    
+}
