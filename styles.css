@@ -233,6 +233,11 @@ p{
 
 @media (max-width: 600px) {
 
+    #titulo_habilidade{
+        text-align: center;
+        padding: 1em 0;
+    }
+
     #text__Content{
         font-size: 2em;
         width: 70%;
@@ -269,6 +274,10 @@ p{
         padding: 0;
     }
 
+    p{
+        padding: 1em 0;
+    }
+
     .elements{
         display:flex ;
         flex-direction: column;
@@ -280,12 +289,11 @@ p{
     .topics{
         padding: 0;
         margin: 0;
-        width: 100%;
+        width: 90%;
         text-align: center;
     
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
     }
 
