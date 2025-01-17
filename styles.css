@@ -122,6 +122,10 @@ input:checked + #toggle::after{
     padding-top: 2em;
 }
 
+.group{
+    text-align: center;
+}
+
 .cards{
     display: flex;
     flex-direction: row;
@@ -137,8 +141,8 @@ input:checked + #toggle::after{
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(80, 80, 80, 0.37);
 
-    width: 18em;
-    height: 18em;
+    width: 9em;
+    height: 9em;
     margin: 2em;
 
     display: flex;
@@ -151,11 +155,16 @@ input:checked + #toggle::after{
     height: 70%;
 }
 
+.img__Card_C{
+    height: 60%;
+}
+
 .sobre__Content{
     display: flex;
     flex-direction: row;
+    align-items: center;
 
-    padding: 5em;
+    padding: 3em;
     background-color: #e8ddbd;
 }
 
@@ -201,31 +210,83 @@ p{
 
 .elements{
     display:flex ;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2em;
+    flex-direction: column;
     align-items: center;
 }
 
 .topics{
     padding: 0;
     margin: 0;
-    width: 40%;
-    height: 90%;
+    width: 100%;
+    height: 20%;
     text-align: center;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    gap: 2em;
 }
 
 .icon_Topics{
-    height: 80%;
-    width: 70%;
+    height: 2em;
 }
 
 @media (max-width: 600px) {
 
+    #text__Content{
+        font-size: 2em;
+        width: 70%;
+        padding-bottom: 2em;
+    }
+
+    .img__Card{
+        height: 60%;
+    }
+
+    .sobre__Content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
+        padding: 1em;
+    }
+
+    #img__Sobre{
+        width: 50%;
+        height: 100%;
+
+        padding: 1em 0;
+    }
+
+    #sobre__Info{
+        width: 90%;   
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .titulos{
+        padding: 0;
+    }
+
+    .elements{
+        display:flex ;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+        align-items: center;
+    }
+    
+    .topics{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
