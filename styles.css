@@ -230,16 +230,16 @@ p {
   height: 2em;
 }
 
-#titulo__Projeto{
-  padding-left: 2em;
-  padding-top: 1em;
-}
-
 .projetos{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+#titulo__Projeto{
+    padding-left: 2em;
+    padding-top: 1em;
+  }
 
 .portifolio__Content {
     position: relative;
@@ -368,4 +368,26 @@ p {
     flex-direction: row;
     align-items: center;
   }
+
+  #titulo__Projeto{
+    padding-left: 1em;
+  }
+
+  .card__title {
+    font-size: 10px;
+    color: #333;
+    font-weight: 700;
+}
+  
+.portifolio__Content:hover svg {
+    scale: 0;
+}
+  
+.card__description {
+    margin: 10px 0 0;
+    font-size: 8px;
+    font-weight: bold;
+    color: #777;
+    line-height: 1;
+}
 }
