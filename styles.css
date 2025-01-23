@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
   margin: 0;
   padding: 0;
@@ -15,66 +19,25 @@ body {
   flex-direction: row;
   justify-content: space-between;
   justify-items: center;
-  padding: 1.5em;
 }
 
-.toggle-language {
-  display: flex;
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0.5em;
+    justify-items: center;
+    width: 90%;
 }
 
-#toggle {
-  width: 7em;
-  height: 2.2em;
-  position: relative;
-  display: block;
-  background-color: #e8ddbd;
-  border-radius: 20px;
-  cursor: pointer;
-  transform: 0.5s;
+#navbar li{
+    list-style: none;
 }
 
-#toggle::after {
-  content: "";
-  width: 3.5em;
-  height: 1.9em;
-  position: absolute;
-  left: 2%;
-  margin-top: 2%;
-  background-color: #dba887;
-  border-radius: 20px;
-}
-
-input {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
-input:checked + #toggle {
-  background-color: #e8ddbd;
-}
-
-input:checked + #toggle::after {
-  margin-left: 95%;
-  transform: translateX(-100%);
-  background-color: #dba887;
-}
-
-#toggle span {
-  position: absolute;
-  top: 25%;
-  width: 120px;
-  z-index: 100;
-}
-
-#toggle span.pt {
-  left: 17%;
-  transition: 0.5s;
-}
-
-#toggle span.en {
-  left: 63%;
-  transition: 0.5s;
+#navbar a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
 }
 
 #icon {
@@ -110,7 +73,7 @@ input:checked + #toggle::after {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.habilidade {
+#habilidade {
   height: 55%;
   background: #f8f9fd;
   padding-bottom: 3em;
@@ -305,6 +268,16 @@ p {
 }
 
 @media (max-width: 600px) {
+
+    #navbar ul{
+        padding-top: 0.5em;
+        width: 78%;
+    }
+
+    #navbar a{
+        font-size: 1em;
+    }
+
   #titulo_habilidade {
     text-align: center;
     padding: 1em 0;
@@ -373,11 +346,20 @@ p {
     padding-left: 1em;
   }
 
+  .projetos{
+    display: flex;
+    flex-direction: column;
+}
+
+.portifolio__Content {
+    width: 18em;
+    height: 10em;
+}
   .card__title {
     font-size: 10px;
     color: #333;
     font-weight: 700;
-}
+  }
   
 .portifolio__Content:hover svg {
     scale: 0;
@@ -385,7 +367,7 @@ p {
   
 .card__description {
     margin: 10px 0 0;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bold;
     color: #777;
     line-height: 1;

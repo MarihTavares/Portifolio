@@ -1,6 +1,6 @@
-const Button = document.querySelector('#button__Content')
+const Button = document.querySelector('#button__Content');
 
-Button.addEventListener("click", () =>{
+Button.addEventListener("click", () => {
 
     const link = document.createElement("a");
     link.href = "arquivo/CV.pdf"
